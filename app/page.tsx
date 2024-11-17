@@ -125,7 +125,7 @@ const Home: React.FC = () => {
                 <div className="mt-[250px] sm:mt-[250px] p-4 rounded-lg md:mt-[250px] lg:mt-[250px] mx-auto max-w-xl">
                 <Link href={`/user/${user.id}`}>
                   <h1 className="text-xl text-white font-bold mb-2">Name: {user.first_name} {user.last_name}</h1>
-                  <p className="text-sm sm:text-lg font-semibold text-white mb-1">Email: {user.email}</p>
+                  {/* <p className="text-sm sm:text-lg font-semibold text-white mb-1">Email: {user.email}</p> */}
                   <p className="text-sm sm:text-lg font-semibold text-white mb-1">Message: {user?.message?.length > 60 ? user.message.slice(0, 50) + '...' : user.message}</p>
                 </Link>
                 <Link href={`/user/${user.id}?index=${index}`}>

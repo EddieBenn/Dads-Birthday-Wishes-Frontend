@@ -124,7 +124,7 @@ const UserPage: React.FC<UserPageProps> = ({ params }) => {
           >
             Name: {user?.first_name} {user.last_name}
           </motion.h1>
-          <p className="text-lg font-semibold dark:text-white text-black mb-1">Email: {user.email}</p>
+          {/* <p className="text-lg font-semibold dark:text-white text-black mb-1">Email: {user.email}</p> */}
           <p className="text-lg max-h-[500px] bg-gray-700 rounded-lg p-4 text-white overflow-y-scroll font-semibold mb-1"><span className='dark:text-white text-black'>Message:</span> {user.message}</p>
         </div>
         <Alerts
