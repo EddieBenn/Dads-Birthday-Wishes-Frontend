@@ -1,8 +1,8 @@
 import axios from '../axiosSetup';
 
-export const allMessages = async(name?:string)=>{
+export const allMessages = async(name?:string, page?:any)=>{
     try{
-        const response = await axios.get(`/users?name=${name}`)
+        const response = await axios.get(`/users`, { params: { name, page } })
         return response
     }catch(error:any){
         return error.response
